@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import inputSyncApi from './inputSyncApi'
-import InputValue from '../components/InputValue/InputValue'
 import Button from '../components/Button/Button'
+import InputValue from '../components/InputValue/InputValue'
 import { MainBoxStyled, SideStyled } from './inputSyncStyled'
 
 const InputSyncPage = () => {
