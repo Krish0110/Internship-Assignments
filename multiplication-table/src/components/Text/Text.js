@@ -1,10 +1,11 @@
 import React from 'react';
+import TextStyled from './TextStyled';
 
 function Text({ text }) {
   return (
-    <div>
+    <TextStyled>
       <h2>{text}</h2>
-    </div>
+    </TextStyled>
   );
 }
 

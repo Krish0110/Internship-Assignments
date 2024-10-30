@@ -13,6 +13,7 @@ class TaskList extends Component {
     console.log('task list');
     return (
       <div>
+        Task:
         {tasks}
       </div>
     );

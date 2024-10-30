@@ -1,11 +1,12 @@
 /* eslint-disable no-console */
 import React, { useState } from 'react';
-import InputValue from '../components/InputValue';
-import Text from '../components/Text';
-import Button from '../components/Button';
+import InputValue from '../components/InputValue/InputValue';
+import Text from '../components/Text/Text';
+import Button from '../components/Button/Button';
 import multiplier from '../services/multiplier';
-import TableRow from '../components/TableRow';
+import TableRow from '../components/TableRow/TableRow';
 import withColorHighlight from '../services/withColorHighlight';
+import { MainBoxStyled, TableStyled } from './TablePaageStyled';
 
 const ColoredTableRow = withColorHighlight(TableRow);
 
@@ -18,6 +19,7 @@ function TablePage() {
     // added radix parameter 10 to convert it into decimal
     const intValue = parseInt(changedValue, 10);
     setValue(intValue);
+    setDisplayFlag(false);
   };
 
   const handleClick = () => {
@@ -26,27 +28,34 @@ function TablePage() {
     }
   };
 
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      handleClick();
+    }
+  };
+
   return (
-    <div>
+    <MainBoxStyled>
       <Text
         text="Multiplication table"
       />
       <InputValue
         value={value}
         onChange={(changedValue) => { handleChange(changedValue); }}
+        onKeyDown={handleKeyDown}
       />
       <Button
         title="Submit"
         onClick={handleClick}
       />
       {displayFlag && (
-        <>
+        <TableStyled>
           {Array.from({ length: 10 }, (_, i) => (
             <ColoredTableRow key={i} value={value} factor={i + 1} result={result[i]} />
           ))}
-        </>
+        </TableStyled>
       )}
-    </div>
+    </MainBoxStyled>
   );
 }
 

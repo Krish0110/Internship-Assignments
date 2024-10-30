@@ -1,10 +1,11 @@
+/* eslint-disable react/no-array-index-key */
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable no-console */
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import ButtonComponent from '../components/Button';
+import ButtonComponent from '../components/Button/Button';
 import fetchTask from '../redux/action';
-import TaskList from '../components/TaskList';
+// import TaskList from '../components/TaskList';
 
 class TaskToDoPage extends Component {
   constructor(props) {
@@ -20,11 +21,14 @@ class TaskToDoPage extends Component {
 
   render() {
     const { tasks } = this.props;
+    console.log(tasks);
     return (
       <div>
         <h2>Task To Do</h2>
         <ButtonComponent title="Fetch Task" onClick={this.handleFetchTask} />
-        <TaskList tasks={tasks} />
+        <div>
+          {tasks.length > 0 ? tasks.map((task, index) => <div key={index}>{task}</div>) : 'No tasks available'}
+        </div>
       </div>
     );
   }

@@ -6,7 +6,7 @@ function withColorHighlight(WrappedComponent) {
       const { result, ...otherProps } = this.props;
       let color;
 
-      if (result === 0) {
+      if (result % 10 === 0) {
         color = 'red';
       } else if (result % 2 === 0) {
         color = 'green';
@@ -15,8 +15,8 @@ function withColorHighlight(WrappedComponent) {
       }
 
       return (
-        <div style={{ color }}>
-          <WrappedComponent {...otherProps} result={result} />
+        <div>
+          <WrappedComponent {...otherProps} result={result} color={color} />
         </div>
       );
     }
