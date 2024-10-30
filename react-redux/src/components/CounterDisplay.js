@@ -1,8 +1,6 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
 
-function CounterDisplay() {
-  const counter = useSelector((state) => state.counter);
+function CounterDisplay({ counter }) {
   return (
     <div>
       <h1>Counter App</h1>
