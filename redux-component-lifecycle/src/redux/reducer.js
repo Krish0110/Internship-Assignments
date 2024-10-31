@@ -1,15 +1,17 @@
+import { FETCH_TASKS } from './action';
+
 /* eslint-disable default-param-last */
 const initialState = {
-  task: [],
+  tasks: [],
 };
 
 const taskReducer = (state = initialState, action) => {
   console.log('Reducer', state);
   switch (action.type) {
-    case 'FETCH_TASK':
+    case FETCH_TASKS:
       return {
         ...state,
-        task: [...state.task, ...action.payload],
+        tasks: [...state.tasks, ...action.payload],
       };
     default:
       return state;

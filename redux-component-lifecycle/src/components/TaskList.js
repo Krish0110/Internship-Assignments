@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 import React, { Component } from 'react';
 
 class TaskList extends Component {
@@ -13,8 +14,12 @@ class TaskList extends Component {
     console.log('task list');
     return (
       <div>
-        Task:
-        {tasks}
+        <h4>Tasks:</h4>
+        <ul>
+          {tasks.map((task, index) => (
+            <p key={index}>{task}</p>
+          ))}
+        </ul>
       </div>
     );
   }
