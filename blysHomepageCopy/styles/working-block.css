@@ -29,7 +29,7 @@
   width:25%;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
   .working-block{
     display: flex;
     flex-direction: column;

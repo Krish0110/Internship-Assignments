@@ -5,6 +5,10 @@ a{
   text-decoration: none;
 }
 
+.main-box{
+  position: relative;
+}
+
 .nav-bar {
   display:flex;
   padding-top:20px;
@@ -22,6 +26,16 @@ a{
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
+.message-icon{
+  position: fixed;
+  right:20px;
+  bottom:20px;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
+  height: 60px;
+  width: 60px;
+  z-index: 10;
+}
+
 .nav-bar-logo-div{
   margin-right: 200px;
 }
@@ -37,10 +51,11 @@ a{
   display:flex;
   gap:40px;
   color:gray;
+  max-width: fit-content;
 }
 
 .nav-bar button{
-  background-color:darkcyan;
+  background-color:rgb(6, 182, 212);
   color:white;
   border:none;
   border-radius: 5px;
@@ -55,9 +70,32 @@ a{
   display:none;
 }
 
+.anchor-div a{
+  position: relative;
+}
+
+.anchor-div a::after{
+  content:'';
+  position:absolute;
+  height:1.5px;
+  border-radius: 5px;
+  background-color: black;
+  width: 0%;
+  bottom: 0px;
+  left:0;
+  transition: all 0.5s;
+}
+
+.anchor-div a:hover::after{
+  width: 100%;
+}
+
+.nav-bar button:hover{
+  opacity: 80%;
+}
 
 /* For mobile phones */
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
   .nav-bar {
     display:flex;
     position:relative;
@@ -100,6 +138,68 @@ a{
     position: absolute;
     top:25px;
     right:30px
+  }
+
+  .message-icon{
+    position: fixed;
+    right:20px;
+    bottom:25px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
+    height: 55px;
+    width: 55px;
+  }
+}
+
+@media screen and (max-width:1023px) {
+  .nav-bar {
+    display:flex;
+    position:relative;
+    padding-top:0px;
+    top: 0;
+    height:70px;
+    padding-left: 0px;
+    padding-right: 0px;
+    justify-content: space-around;
+    position: fixed;
+  }
+  
+  .nav-bar-logo-div{
+    position: absolute;
+    top:10px;
+    left:20px;
+  }
+  .nav-bar-logo{
+    height:45px;
+  }
+  
+  .profile-icon{
+    height:20px;
+    position: absolute;
+    top:25px;
+    right:70px;
+  }
+  
+  .anchor-div{
+    display: none;
+  }
+  
+  .nav-bar button{
+    display: none;
+  }
+
+  .menu-icon{
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    top:25px;
+    right:30px
+  }
+
+  .message-icon{
+    position: fixed;
+    right:20px;
+    bottom:25px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
   }
 }
 

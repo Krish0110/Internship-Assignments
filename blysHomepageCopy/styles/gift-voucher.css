@@ -34,7 +34,7 @@
   border-radius: 10px;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
   .gift-voucher-inside {
     margin-left: 25px;
     margin-right: 25px;
