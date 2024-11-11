@@ -1,0 +1,49 @@
+.rating-block{
+  margin-top:100px;
+  background-color: rgb(252, 235, 215);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 150px;
+}
+
+.inside-rating{
+  margin-top:100px;
+  margin-bottom: 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.checked{
+  color:rgb(6 182 212);
+}
+
+.unchecked{
+  color:grey;
+}
+
+@media screen and (max-width:768px){
+  .rating-block{
+    margin-top:40px;
+    background-color: rgb(252, 235, 215);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+  }
+
+  .inside-rating{
+    margin-top:10px;
+    margin-bottom: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile-info{
+    flex-direction: column;
+  }
+}

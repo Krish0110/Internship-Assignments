@@ -1,0 +1,35 @@
+.service-blocks{
+  margin-top: 50px;
+  margin-left: 80px;
+  margin-right: 80px;
+  border-bottom: 2px solid rgb(219, 212, 212);
+}
+.service-block{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 200px;
+}
+
+.service-texts{
+  width:40%;
+}
+
+@media screen and (max-width:768px) {
+  .service-blocks{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 0px;
+    border-bottom: none;
+  }
+  .service-block{
+    flex-direction: column;
+    margin-top: 50px;
+    padding-bottom: 75px;
+    border-bottom: 2px solid rgb(219, 212, 212);
+    margin-bottom: 0px;
+  }
+  
+  .service-texts{
+    width:100%;
+  }
+}

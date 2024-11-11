@@ -1,0 +1,80 @@
+.massage-option-block{
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 100px;
+  align-items: center;
+  text-align: center;
+}
+
+.inside-massage{
+  margin-top:100px;
+}
+
+.all-massage-types{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display:flex;
+  justify-content: space-around;
+}
+
+.massage-type{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width:22%;
+}
+
+.all-massage-types-2{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display:flex;
+  justify-content: center;
+}
+
+.massage-type-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width:22%;
+  margin-right: 25px;
+}
+
+@media screen and (max-width:768px) {
+  .massage-option-block{
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .inside-massage{
+    margin-top:25px;
+  }
+
+  .all-massage-types{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .massage-type{
+    width:100%;
+    margin-bottom: 30px;
+  }
+
+  .all-massage-types-2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .massage-type-2{
+    width:100%;
+    margin-bottom: 30px;
+    margin-right:0px ;
+  }
+}

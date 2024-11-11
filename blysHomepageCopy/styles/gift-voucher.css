@@ -1,0 +1,71 @@
+.gift-voucher {
+  background-image: url("/images/laptop/giftVoucherBg.png");
+  background-repeat: no-repeat;
+  background-position: -850px;
+  background-size: cover;
+}
+
+.gift-voucher-inside {
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.gift-voucher-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 30%;
+  background-color: white;
+  padding: 60px;
+  border-radius: 10px;
+}
+
+.gift-voucher-item-redem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 30%;
+  background-color: rgb(36, 36, 78);
+  padding: 60px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width:768px) {
+  .gift-voucher-inside {
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .gift-voucher-item {
+    width: 100%;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+
+  .gift-voucher-item-redem {
+    width: 100%;
+    background-color: rgb(36, 36, 78);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+  }
+
+  .gift-voucher {
+    background-image: none;
+    background-color: rgb(252, 235, 215);
+  }
+  
+}

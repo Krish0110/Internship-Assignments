@@ -1,0 +1,33 @@
+.question-block{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.question-title{
+  margin-top: 150px;
+}
+
+.questions{
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  justify-content: space-between;
+}
+
+@media screen and (max-width:768px) {
+  .question-block{
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .question-title{
+    margin-top: 100px;
+  }
+
+  .questions{
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+}
