@@ -29,7 +29,7 @@
   width:25%;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:1023px) {
   .working-block{
     display: flex;
     flex-direction: column;
@@ -57,5 +57,11 @@
     justify-content: center;
     margin-bottom: 80px;
     width:95%;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .working-block{
+    padding-bottom: 30px;
   }
 }

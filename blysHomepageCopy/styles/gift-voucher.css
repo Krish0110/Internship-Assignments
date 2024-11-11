@@ -44,28 +44,49 @@
 
   .gift-voucher-item {
     width: 100%;
-    background-color: white;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 20px;
     padding-bottom: 20px;
-    border-radius: 10px;
     margin-bottom: 30px;
   }
 
   .gift-voucher-item-redem {
     width: 100%;
-    background-color: rgb(36, 36, 78);
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-    border-radius: 10px;
   }
 
   .gift-voucher {
     background-image: none;
     background-color: rgb(252, 235, 215);
   }
-  
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .gift-voucher-inside {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+
+  .gift-voucher-item {
+    width: 100%;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    margin-bottom: 30px;
+  }
+
+  .gift-voucher-item-redem {
+    width: 100%;
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .gift-voucher{
+    background-position: -3300px;
+  }
 }

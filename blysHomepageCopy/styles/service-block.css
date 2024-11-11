@@ -11,10 +11,10 @@
 }
 
 .service-texts{
-  width:40%;
+  width:35%;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width: 1023px) {
   .service-blocks{
     margin-left: 30px;
     margin-right: 30px;
@@ -32,4 +32,15 @@
   .service-texts{
     width:100%;
   }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .service-blocks{
+    border-bottom: 2px solid rgb(219, 212, 212);
+  }
+
+  .service-block{
+    border-bottom: none;
+  }
+
 }
