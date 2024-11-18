@@ -14,6 +14,7 @@ a{
   padding-top:20px;
   top: 0;
   width: 100%;
+  height: 100px;
   padding-left: 100px;
   padding-right: 100px;
   align-items: center;
@@ -37,7 +38,8 @@ a{
 }
 
 .nav-bar-logo-div{
-  margin-right: 200px;
+  position:absolute;
+  left:100px;
 }
 .nav-bar-logo{
   height:50px;
@@ -52,6 +54,8 @@ a{
   gap:40px;
   color:gray;
   max-width: fit-content;
+  position:absolute;
+  left:500px;
 }
 
 .nav-bar button{
@@ -63,11 +67,17 @@ a{
   padding-right: 20px;
   padding-top: 5px;
   padding-bottom: 5px;
-  margin-right:-120px;
+  position:absolute;
+  right: 150px;
 }
 
 .menu-icon{
   display:none;
+}
+
+.profile-icon{
+  position: absolute;
+  right: 100px;
 }
 
 .anchor-div a{

@@ -1,7 +1,7 @@
 .gift-voucher {
   background-image: url("/images/laptop/giftVoucherBg.png");
   background-repeat: no-repeat;
-  background-position: -850px;
+  background-position: center;
   background-size: cover;
 }
 
